@@ -28,15 +28,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1    |  2     |  3    |  4  |  5  |     |  6   |  7  |  8  |  9   |  0  | DEL |
-// | CNTRL| BT1   | BT2    | BT3   | BT4 | BT5 |     | LFT  | DWN |  UP | RGT  |     |     |
-// | SHFT | BTCLR | VOL_DN | VOLUP | PP  |     |     | PREV |     |     | NEXT |     |     |
+// |  TAB |  1    |  2     |  3    |  4  |  5  |     |  6   |  7  |  8  |  9   |  0  | DEL   |
+// | CNTRL|       | VOLDN  | VOLUP | PP  |     |     | LFT  | DWN |  UP | RGT  |     |       |
+// | SHFT | BT1   | BT2    | BT3   | BT4 | BT5 |     | PREV |     |     | NEXT |     | BTCLR |
 //                | GUI    |       | SPC |     | ENT |      | ALT |
                         label = "Lower";
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6     &kp N7   &kp N8 &kp N9     &kp N0 &kp DEL
-   &kp LCTRL  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT   &kp DOWN &kp UP &kp RIGHT  &trans &trans
-   &kp LSHFT  &bt BT_CLR   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP     &trans       &kp C_PREV &trans   &trans &kp C_NEXT &trans &trans
+   &kp LCTRL  &trans       &kp C_VOL_DN &kp C_VOL_UP &kp C_PP     &trans       &kp LEFT   &kp DOWN &kp UP &kp RIGHT  &trans &trans
+   &kp LSHIFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp C_PREV &trans   &trans &C_NEXT    &trans &bt BT_CLR
                           	        &kp LGUI     &trans       &kp SPACE    &kp RET    &trans   &kp RALT
                         >;
                 };
