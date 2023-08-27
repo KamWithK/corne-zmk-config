@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  flavor = "tap-unless-interrupted";
+  flavor = "tap-preferred";
   tapping-term-ms = <200>;
   quick-tap-ms = <200>;
 };
