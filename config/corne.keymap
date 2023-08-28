@@ -9,10 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  flavor = "tap-preferred";
-  tapping-term-ms = <150>;
-  quick-tap-ms = <150>;
-  global-quick-tap;
+  flavor = "balanced";
+  tapping-term-ms = <280>;
+  quick-tap-ms = <175>;
+  global-quick-tap-ms = <150>;
 };
 
 / {
