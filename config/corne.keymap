@@ -21,6 +21,7 @@
 
     behaviors {
         hml: homerow_left {
+            label = "HOMEROW_LEFT";
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -32,6 +33,7 @@
             hold-trigger-on-release;
         };
         hmr: homerow_right {
+            label = "HOMEROW_RIGHT";
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             tapping-term-ms = <280>;
