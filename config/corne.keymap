@@ -22,14 +22,14 @@
         toggle_gaming {
             timeout-ms = <50>;
             key-positions = <25 26>;
-            layer = <0>;
+            layers = <0>;
             bindings = <&tog 1>;
         };
 
         toggle_default {
             timeout-ms = <50>;
             key-positions = <25 26>;
-            layer = <1>;
+            layers = <1>;
             bindings = <&tog 0>;
         };
     };
