@@ -20,6 +20,8 @@
     };
 
     behaviors {
+        compatible = "zmk,behavior-hold-tap";
+
         hml: homerow_left {
             flavor = "balanced";
             tapping-term-ms = <280>;
