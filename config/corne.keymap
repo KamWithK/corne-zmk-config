@@ -8,13 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-  flavor = "balanced";
-  tapping-term-ms = <280>;
-  quick-tap-ms = <175>;
-  global-quick-tap-ms = <150>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -23,6 +16,27 @@
             timeout-ms = <50>;
             key-positions = <37 40>;
             bindings = <&tog 1>;
+        };
+    };
+
+    behaviors {
+        hml: homerow_left {
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            global-quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17>;
+            hold-trigger-on-release;
+        };
+        hmr: homerow_right {
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            global-quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35>;
+            hold-trigger-on-release;
         };
     };
 };
@@ -39,9 +53,9 @@
 //                    | SHIFT | LWR | SPC |   | ENT | RSE  | ALT |
                         label = "Base";
                         bindings = <
-   &kp TAB   &kp Q      &kp W            &kp E        &kp R            &kp T            &kp Y   &kp U         &kp I           &kp O        &kp P         &kp BSPC
-   &kp LCTRL &mt LGUI A &mt LALT S       &mt LCTRL  D &mt LSHIFT F     &kp G            &kp H   &mt LSHIFT J  &mt LCTRL K     &mt LALT L   &mt LGUI SEMI &kp SQT
-   &kp LGUI  &kp Z      &kp X            &kp C        &kp V            &kp B            &kp N   &kp M         &kp COMMA       &kp DOT      &kp FSLH      &kp ESC
+   &kp TAB   &kp Q       &kp W             &kp E         &kp R             &kp T            &kp Y   &kp U          &kp I            &kp O         &kp P          &kp BSPC
+   &kp LCTRL &hml LGUI A &hml LALT S       &hml LCTRL  D &hml LSHIFT F     &kp G            &kp H   &hmr LSHIFT J  &hmr LCTRL K     &hmr LALT L   &hmr LGUI SEMI &kp SQT
+   &kp LGUI  &kp Z       &kp X             &kp C         &kp V             &kp B            &kp N   &kp M          &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
                                          &kp BSPC     &mo 2            &kp SPACE        &kp RET &mo 3         &kp DEL
                         >;
                 };
