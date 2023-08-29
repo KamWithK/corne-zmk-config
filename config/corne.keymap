@@ -38,7 +38,7 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            global-quick-tap-ms = <130>
+            global-quick-tap-ms = <130>;
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 36 37 38 39 40 41>;
