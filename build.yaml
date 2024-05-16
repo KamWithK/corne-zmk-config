@@ -14,10 +14,10 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: typeractive_left
+    shield: corne_left
   - board: nice_nano_v2
-    shield: typeractive_right
+    shield: corne_right
   - board: nrfmicro_13
-    shield: falba_left
+    shield: corne_left
   - board: nrfmicro_13
-    shield: falba_right
+    shield: corne_right
